@@ -47,10 +47,11 @@ public class URLify {
 				spaceCount++;
 			}
 		}
-
+		System.out.println(str.length);
 		newLength = length + spaceCount*2;
 
 		for (int i = length-1; i > 0; i--) {
+			System.out.println(str.length +" " + newLength);
 			if (str[i] == ' ') {
 				str[newLength - 1] = '0';
 				str[newLength - 2] = '2';
